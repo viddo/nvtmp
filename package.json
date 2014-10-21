@@ -1,0 +1,17 @@
+{
+  "name": "nvtmp",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "foreman": "~1.0.0"
+  },
+  "devDependencies": {
+    "foreman": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
