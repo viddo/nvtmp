@@ -1,0 +1,63 @@
+body {
+  font-family: "Lucida Grande";
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body, input, th, td {
+  font-family: "Lucida Grande";
+  font-size: 12px;
+}
+
+#app {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+}
+
+.filter-input {
+  margin: 10px; /* required for flexbox positioning. */
+  padding: 4px 5px;
+  border-radius: 5px;
+}
+
+.filtered-notes {
+  resize: vertical;
+  overflow: hidden;
+}
+.filtered-notes table {
+  width: 100%;
+}
+
+.filtered-notes th, .filtered-notes td {
+  padding: 5px;
+  text-align: left;
+}
+.filtered-notes tr:nth-child(even) {
+  background-color: #fff;
+}
+.filtered-notes tr:nth-child(odd) {
+  background-color: #eee;
+}
+.filtered-notes tr.selected {
+  background-color: #f5f5aa;
+}
+.filtered-notes .title-preview-separator {
+   color: #bbb;
+}
+.filtered-notes .preview {
+   color: #aaa;
+}
+
+.note-editor {
+  flex-grow: 1;
+  padding: 10px;
+  background: #eee;
+}
