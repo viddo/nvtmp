@@ -6,11 +6,6 @@
 
 (defn component [app owner]
   (reify
-    om/IDidUpdate
-    (did-update [_ _ _]
-                (if (:editing app)
-                  (-> (om/get-node owner "noteEditor")
-                      (.focus))))
     om/IRender
     (render [_]
             (let [note (notes/selected (:notes app))]

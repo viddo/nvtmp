@@ -10,7 +10,6 @@
 (enable-console-print!)
 
 (def app-state (atom {:filter ""
-                      :editing false
                       :notes [{ :title "1st" :body "First example" }
                               { :title "2nd" :body "Another note as example" }
                               { :title "bigger" :body "third\nwith some paragraphs\nof text should be searchable nevertheless" }
