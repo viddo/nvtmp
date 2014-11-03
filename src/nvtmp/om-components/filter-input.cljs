@@ -26,12 +26,13 @@
 (defn str-or-default [s default]
  ({ false s, true default } (empty? s)))
 
+(defn new-note [title]
+  { :title title
+    :body ""
+    :selected true })
 
 (defn create-note! [app title]
-  (om/update! app :notes (conj (:notes @app)
-                               { :title title
-                                 :body ""
-                                 :selected true })))
+  (om/transact! app :notes #(conj % (new-note title))))
 
 (defn handle-key-down [e app owner]
   (condp == (.-keyCode e)
